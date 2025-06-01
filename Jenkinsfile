@@ -54,7 +54,7 @@ pipeline {
             }
         }
         */
-        
+        /*
         stage("SonarQube: Code Analysis"){
             steps{
                 script{
@@ -70,6 +70,7 @@ pipeline {
                 }
             }
         }
+        */
         
         stage('Exporting environment variables') {
             parallel{
