@@ -36,7 +36,7 @@ pipeline {
                 }
             }
         }
-        
+         /*
         stage("Trivy: Filesystem scan"){
             steps{
                 script{
@@ -45,7 +45,7 @@ pipeline {
             }
         }
         
-        /*
+       
         stage("OWASP: Dependency check"){
             steps{
                 script{
@@ -86,7 +86,7 @@ pipeline {
                 
                 stage("Frontend env setup"){
                     steps {
-                        script{v1
+                        script{
                             dir("Automations"){
                                 sh "bash updatefrontendnew.sh"
                             }
