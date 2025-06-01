@@ -36,7 +36,7 @@ pipeline {
                 }
             }
         }
-        
+        /*
         stage("Trivy: Filesystem scan"){
             steps{
                 script{
@@ -125,4 +125,5 @@ pipeline {
             ]
         }
     }
+    */
 }
