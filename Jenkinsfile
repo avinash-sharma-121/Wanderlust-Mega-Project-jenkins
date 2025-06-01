@@ -36,7 +36,6 @@ pipeline {
                 }
             }
         }
-         /*
         stage("Trivy: Filesystem scan"){
             steps{
                 script{
@@ -53,7 +52,7 @@ pipeline {
                 }
             }
         }
-        */
+
         /*
         stage("SonarQube: Code Analysis"){
             steps{
@@ -96,6 +95,7 @@ pipeline {
             }
         }
         
+        /*
         stage("Docker: Build Images"){
             steps{
                 script{
@@ -118,6 +118,7 @@ pipeline {
                 }
             }
         }
+        */
           
     }
     /*
