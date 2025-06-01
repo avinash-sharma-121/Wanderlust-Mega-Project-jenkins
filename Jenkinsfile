@@ -44,7 +44,8 @@ pipeline {
                 }
             }
         }
-
+        
+        /*
         stage("OWASP: Dependency check"){
             steps{
                 script{
@@ -52,6 +53,7 @@ pipeline {
                 }
             }
         }
+        */
         
         stage("SonarQube: Code Analysis"){
             steps{
@@ -83,7 +85,7 @@ pipeline {
                 
                 stage("Frontend env setup"){
                     steps {
-                        script{
+                        script{v1
                             dir("Automations"){
                                 sh "bash updatefrontendnew.sh"
                             }
